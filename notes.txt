@@ -1,0 +1,4 @@
+
+curl -u bob:p  http://localhost:8080/customers
+http://localhost:8080/customers
+
