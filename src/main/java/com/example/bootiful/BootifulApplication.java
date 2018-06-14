@@ -19,7 +19,7 @@ public class BootifulApplication {
 	@Bean
 	ApplicationRunner run(CustomerRepository customerRepository) {
 		System.out.println(">>>>>>>>>>>>>>>>  Invoking spring runner");
-		return args -> Stream.of("Bob", "Erinn", "Emma", "Robin")
+		return args -> Stream.of("Bob", "Erinn", "Emma", "Robin", "Bella")
 				//.map(x -> x.toUpperCase())
 				.forEach(x -> customerRepository.save(new Customer(null, x))	);
 	}
