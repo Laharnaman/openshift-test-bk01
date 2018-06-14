@@ -10,6 +10,6 @@ public class CustomHealthIndicator implements HealthIndicator {
 
     @Override
     public Health health() {
-        return Health.status("Doing fine thanks!").build();
+        return Health.status("All Cloud Systems are go at Allstate!").build();
     }
 }
