@@ -18,6 +18,7 @@ import java.util.Date;
 public class Customer {
     private final String allstateDateFormat = "MM-dd-yyyy";
 
+
     @Id
     @GeneratedValue
     private Long id;
