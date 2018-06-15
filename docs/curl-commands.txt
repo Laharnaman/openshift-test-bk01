@@ -1,0 +1,14 @@
+# OK to add for all messages: -i = show headers and -H is for defining your own content type.
+curl -i -H "Content-Type: application/json"
+
+
+curl -i -H "Content-Type: application/json"  -u bob:p  http://localhost:8080/customers
+
+
+# Add a new customer
+curl -i -H "Content-Type: application/json"  -X POST
+-d '{
+    "name": "Abraham",
+    "title":"Mr",
+    "dob":  "04-22-1999"
+}'   -u bob:p  localhost:8080/newcustomer
